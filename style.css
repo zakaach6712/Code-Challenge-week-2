@@ -1,0 +1,131 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: oklch(13% 0.028 261.692);
+  /* background: linear-gradient(-45deg, #a2d4f0, #cceeff, #b3e5fc, #e0f7fa); */
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #333;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+h1 {
+  text-align: center;
+  color: #4a90e2;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px violet;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #4a90e2;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #7ed6df;
+  box-shadow: 0 0 5px #7ed6df;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+form button {
+  background-color: #4a90e2;
+  color: white;
+}
+
+form button:hover {
+  background-color: #357ab7;
+}
+
+#guest-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#guest-list li {
+  background: #f0f0f0;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#guest-list span {
+  flex-grow: 1;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+#guest-list button {
+  margin-left: 6px;
+  padding: 6px 12px;
+}
+
+#guest-list button:nth-child(2) {
+  background-color: #27ae60;
+  color: white;
+}
+
+#guest-list button:nth-child(2):hover {
+  background-color: #219150;
+}
+
+#guest-list button:nth-child(3) {
+  background-color: #e74c3c;
+  color: white;
+}
+
+#guest-list button:nth-child(3):hover {
+  background-color: #c0392b;
+}
+
+
+  .main {
+  display: flex;
+  
+
+}
+

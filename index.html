@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+ 
+   <div>
+     <h1> Event Guest List</h1>
+   </div>  
+
+  
+
+    <form id="guest-form">
+  <input type="text" id="guest-input" placeholder="Add guest..." required />
+  <button type="submit">Add Guest</button>
+  <select id="guest-category" required>
+    <option value="" disabled selected>Select category</option>
+    <option value="Friend">Friend</option>
+    <option value="collegue">Collegue</option>
+    <option value="Family">Family</option>
+
+  </select>
+  
+</form>
+
+<ul id="guest-list"></ul>
+</body>
+<script src="./src/index.js"></script>
+</html>
